@@ -12,25 +12,25 @@ info:
   version: 1.0.11
 externalDocs:
   description: Swagger
-  url: https://kimseokgis.github.io
+  url: https://gis-geos.github.io/swagger/
 servers:
-  - url: https://asia-southeast2-gis-project-401902.cloudfunctions.net
+  - url: https://us-central1-gcpospasial.cloudfunctions.net
 tags:
   - name: auth
     description: Authentikasi
     externalDocs:
       description: Deskripsi dan Kode Program
-      url: https://github.com/rofinafiin/UsersBackend
+      url: https://github.com/gis-geos/gcf
   - name: register
     description: Register Account
     externalDocs:
       description: Deskripsi dan Kode Program
-      url: https://github.com/rofinafiin/UsersBackend
+      url: https://github.com/gis-geos/gcf
   - name: data
     description: Data Untuk akses GIS
     externalDocs:
       description: Deskripsi dan Kode Program
-      url: https://github.com/rofinafiin/UsersBackend
+      url: https://github.com/gis-geos/gcf
 paths:
   /RegisterGeo:
     post:
@@ -130,10 +130,10 @@ components:
       properties:
         username:
           type: string
-          example : cihuy
+          example : haris
         password:
           type: string
-          example: cihuypaswort
+          example: haris
     Response:
       type: object
       properties:
@@ -157,7 +157,7 @@ components:
           properties:
             username:
               type: string
-              example: cihuy
+              example: haris
             password:
               type: string
               example: hashed password
@@ -169,10 +169,10 @@ components:
       properties:
         username:
           type: string
-          example: cihuy
+          example: haris
         password:
           type: string
-          example: cihuypasworthash
+          example: haris
     bodycord:
       type: object
       properties:
@@ -181,7 +181,7 @@ components:
           example: polygon
         name:
           type: string
-          example: rofi
+          example: haris
         volume:
           type: string
           example: "1"
@@ -196,7 +196,7 @@ components:
           example: Selamat Datang
         token:
           type: string
-          example: cihuy
+          example: haris
   requestBodies:
     AuthReq:
       description: Request Authentication
