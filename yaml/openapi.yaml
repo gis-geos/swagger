@@ -7,7 +7,7 @@ info:
   contact:
     email: imyharis@gmail.com
   license:
-    name: UsersBackend Package
+    name: GCF Package
     url: https://pkg.go.dev/github.com/gis-geos/gcf
   version: 1.0.11
 externalDocs:
