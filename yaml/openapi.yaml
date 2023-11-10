@@ -32,7 +32,7 @@ tags:
       description: Deskripsi dan Kode Program
       url: https://github.com/gis-geos/gcf
 paths:
-  /RegisterGeo:
+  /RegisterGis:
     post:
       tags:
         - register
@@ -74,7 +74,7 @@ paths:
                 $ref: '#/components/schemas/AuthResponse'
         '405':
           description: Invalid input
-  /Updategeo:
+  /UpdateGeo:
     put:
       tags:
         - data
@@ -100,7 +100,7 @@ paths:
           - write:apiKey
           - read:apiKey
 
-  /GetAllgeojson:
+  /GetAllGeo:
     get:
       tags:
         - data
